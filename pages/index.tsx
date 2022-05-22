@@ -24,7 +24,7 @@ export default function Index() {
             DevDash
           </h1>
           <button onClick={() => {
-            router.push("https://ewsgit.github.io/devdash");
+            router.push("https://devdash.vercel.app");
           }} className="bg-green-500 pl-6 pr-6 pt-2 pb-2 rounded-tl-lg rounded-br-lg border-2 border-green-400 hover:border-green-300 active:border-green-500 hover:bg-green-400 active:bg-green-600 transition-all duration-75 text-white font-bold drop-shadow-sm hover:drop-shadow-lg active:shadow-inner active:drop-shadow-none tracking-wider absolute bottom-2 left-1/2 -translate-x-1/2 z-30 cursor-pointer hover:text-gray-700 active:text-white">
             <p>Visit Website</p>
           </button>
