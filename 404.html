@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found</title>
+  <title>404 - Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     * {
@@ -14,49 +14,65 @@
     html {
       color: #888;
       display: table;
-      font-family: sans-serif;
+      font-family: "Jetbrains Mono", monospace;
       height: 100%;
       text-align: center;
       width: 100%;
     }
 
     body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f6f4f5;
     }
 
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
+    .title {
+      color: #444;
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    
+    .separator {
+      height: 0.125rem;
+      width: min(75%, 10rem);
+      background-color: #222;
+      border-radius: 100rem;
+      margin-top: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+      color: #666;
+      font-size: 1.75rem;
+      font-weight: 500;
     }
 
-    p {
-      margin: 0 auto;
-      width: 280px;
+    .description {
+      margin-top: 1rem;
+      width: min(80%, 25rem);
     }
 
     @media only screen and (max-width: 280px) {
-
-      body,
-      p {
+      body, p {
         width: 95%;
+        white-space: wrap;
       }
 
-      h1 {
+      .title {
         font-size: 1.5em;
         margin: 0 0 0.3em;
       }
-
     }
   </style>
 </head>
-
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <h1 class="title">404</h1>
+  <div class="separator"></div>
+  <span class="subtitle">Page Not Found</span>
+  <p class="description">Sorry, but the page you were trying to view is not available.</p>
 </body>
-
 </html>
 <!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
