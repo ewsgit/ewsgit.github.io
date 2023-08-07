@@ -1,41 +1,4 @@
-body, html {
-  --container-bg: #333;
-  --container-fg: #fff;
-
-  background-color: #212121;
-  color: #ffffff;
-  font-family: "JetBrains Mono", monospace;
-  min-height: 100vh;
-}
-
-.header {
-  width: 100%;
-  color: var(--container-fg);
-  background-color: var(--container-bg);
-  padding: 0.5rem;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.header > .logo {
-  height: 2.5rem;
-}
-
-.header > .name {
-  font-size: 2.5rem;
-  color: var(--container-fg);
-  font-family: "JetBrains Mono", monospace;
-  font-weight: bold;
-  margin: 0;
-}
-
-.content {
+.page__content {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,10 +6,11 @@ body, html {
   justify-content: center;
 }
 
-.content > h1 {
-  font-size: 8rem;
+.page__content > h1 {
+  font-size: 4rem;
   color: var(--container-fg);
   font-family: "JetBrains Mono", monospace;
-  font-weight: bolder;
+  font-weight: 600;
   margin: 0;
+  text-align: center;
 }
