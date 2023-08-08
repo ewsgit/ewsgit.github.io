@@ -12,6 +12,8 @@
   --accent-color: #DF3434;
   --container-bg: #333;
   --container-fg: #fff;
+  
+  --content-max-width: 60rem;
 }
 
 html,
