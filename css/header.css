@@ -1,8 +1,6 @@
 .header__component {
-  --header-bg: 25 25 25;
-  
   height: 3rem;
-  background: rgb(var(--header-bg) / 0.8);
+  background: var(--container-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +13,7 @@
   border-radius: 0;
   padding: 0.5rem;
 
-  backdrop-filter: blur(0.25rem);
+  backdrop-filter: var(--container-backdrop-filter);
   -webkit-backdrop-filter: blur(0.25rem);
   transition: all var(--slow-transition), transform linear 0s, padding linear 0s;
 }

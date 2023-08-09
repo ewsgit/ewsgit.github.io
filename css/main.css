@@ -10,8 +10,12 @@
   --slow-transition-duration: 250ms;
   --slow-transition: ease-in-out var(--slow-transition-duration);
   --accent-color: #DF3434;
-  --container-bg: #333;
+  --container-bg: #333d;
   --container-fg: #fff;
+  --container-padding: 0.4rem;
+  --container-border: 0.1rem solid #353535da;
+  --container-border-radius: 1rem;
+  --container-backdrop-filter: blur(0.5rem);
   
   --content-max-width: 60rem;
 }

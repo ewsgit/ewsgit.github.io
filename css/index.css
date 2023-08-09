@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #ff0, #f0f);
+  padding: 1rem;
 }
 
 .page__content > h1 {
@@ -15,4 +16,13 @@
   margin: 0;
   text-align: center;
   width: 90%;
+}
+
+.page__content__section {
+  background: var(--container-bg);
+  color: var(--container-fg);
+  border: var(--container-border);
+  padding: var(--container-padding);
+  border-radius: var(--container-border-radius);
+  backdrop-filter: var(--container-backdrop-filter);
 }
